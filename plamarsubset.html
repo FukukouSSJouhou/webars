@@ -14,6 +14,18 @@
     <meta property="og:image" content="https://fukukoussjouhou.github.io/webars/plamar.png"/>
 
     <title>Jouhouhan ARs</title>
+    <script type="text/javascript" language="JavaScript">
+        window.addEventListener('load', function() {
+    var url = location.href;
+    if(document.referrer.indexOf(document.location.hostname)==-1)
+    {
+    if (navigator.userAgent.indexOf("iPhone") > 0 || (navigator.userAgent.indexOf("Android") > 0 && navigator.userAgent.indexOf("Mobile") > 0))
+    {
+    location.href = "plamarsubsetp.html";
+    }
+    }
+});
+    </script>
     <style>
         #left {
             position: absolute;
@@ -40,6 +52,11 @@
         }
     </style>
 </head>
+<div id="left">
+    <iframe src="menu.html"></iframe>
+</div>
+<div id="right" width="100%">
     <iframe src="plamarsubsetp.html"></iframe>
+</div>
 
 </html>
